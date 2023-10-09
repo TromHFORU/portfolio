@@ -1,2 +1,2 @@
 # portfolio
-#basic portfolio of my resume
+#Trying the git for pages and hosting the resume
