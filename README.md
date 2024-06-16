@@ -1,2 +1,3 @@
 # portfolio
-#Trying the git for pages and hosting the resume
+# Roman Thapa
+# Hosting portfolio in git
