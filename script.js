@@ -5,12 +5,18 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-// Find the span element by its ID
-const yearSpan = document.getElementById('current-year');
+// Wait for the DOM structure to load completely
+document.addEventListener('DOMContentLoaded', () => {
+    // Locate the empty span by its ID
+    const yearSpan = document.getElementById('current-year');
+    
+    // Fetch the 4-digit year from the system clock
+    const currentYear = new Date().getFullYear();
+    
+    // Inject the year into the webpage
+    if (yearSpan) {
+        yearSpan.textContent = currentYear;
+    }
+});
 
-// Get the full 4-digit current year from the system clock
-const currentYear = new Date().getFullYear();
-
-// Insert the dynamic year into the HTML
-yearSpan.textContent = currentYear;
 
